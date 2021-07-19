@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiideLab Signup Form</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+         }
+        input{
+            width:80%;
+            padding:5px;
+            margin:5px 20px;
+            border-radius:10px;
+        }
+        h3{
+            color:purple;
+            margin: 15px;
+            font-size: 20px;
+        }
+        input:focus{
+            background-color: orange;
+            color:pink;
+            outline:none;
+        }
+        .submit{
+            background-color: purple;
+            width: 85%;
+            color: snow;
+            font-size: 12px;
+        }
+        .form-container{
+            width: 50%;
+        }
+        .instruction{
+            width: 50%;
+
+        }
+        @media screen and (max-width:800px){
+            .form-container.instruction{
+                width: 100%;
+            }
+        
+            
+
+        }
+    </style>
+</head>
+<body >
+    <div style="background: url('iStock-518593045_res.jpeg'); height: 600px;
+    background-size: cover; background-color: mistyrose; width:100%;"
+    >
+            <div style ="float:left;margin-top: 200px; color:white ; width: 40%">
+                <h1> Vancouver's Best Home Cleaners</h1>
+                <h4> Pro cleaning is Vancouver's best cleaning service. 
+                    For the quality maid service Vancouver relies on,
+                    book one of our experienced, background-checked
+                    professional to have your home in no time</h4>
+            </div>
+
+            <div style ="float:right;margin-top: 150px; background-color: rgba(112, 128, 144, 0.4); margin-right: 100px; width: 40%;" class= form-container ; >
+                <h3 style="color: white;">
+                    Request Info & Booking
+                </h3>
+
+                <form action="" onsubmit ="processForm()" name="" id =""> 
+
+                    <input type="text" name="fullname" id="fullname" placeholder="Your Name" required >
+                    <input type="email" name="email" id="email", placeholder =" Your Email " required>
+                    <input type="tel" name="phone" id="phone_no" placeholder="Your Phone" required>
+                    <input type="submit" value="Request Info & Booking" class="submit">
+            
+                </form>  
+                
+            </div>
+            <div style="clear:left"></div>
+
+    </div >
+    <script>
+        function processForm(){
+            fullname = document.getElementById('fullname').value
+            email = document.getElementById('email').value
+            phone = document.getElementById('phone_no').value
+           alert(
+            " name- " + fullname + " email- " + email + " phone- " + phone
+           )
+        }        
+
+    
+    </script>
+
+</body>
+</html>
